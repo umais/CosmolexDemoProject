@@ -1,0 +1,133 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!-- About Section -->
+<section id="about" class="container content-section text-center">
+    <div class="row" >
+        <div class="col-lg-6 col-lg-offset-3">
+            <h2>Sample Project Cases</h2>
+            <div style="margin-bottom: 10px;">
+                <a class="btn btn-large btn-default" data-toggle="modal" data-target="#myModal">Add New Case</a>
+                <a class="btn btn-large btn-default" style="margin-left: 5px;" ng-click="GetCases();">Show All Cases</a>
+            </div>
+            <div ng-show="showLoadingGif"><img src="~/img/loading.gif" /></div>
+            <div class="well text-danger" ng-show="noCases">No Cases in database.</div>
+            <section class="row" ng-show="showCaseList" style="margin:10px;" ng-repeat="caseModel in CaseList">
+                <div class="panel panel-info panel-warning collapse-group " style="border: 0 !important;">
+
+                    <div class="panel-heading " style="background-color: #4c4c4c !important; color: whitesmoke !important;border: 0 !important;">
+                        {{caseModel.Name}}
+                        <i id="minus{{$index}}" class="fa fa-plus-square pull-right" style="color: black; padding-right: 3px;" ng-click="showHidePanel($index);"></i>
+                    </div>
+                    <div class="panel-body collapse " style="color: black !important">
+                        <section class="col-md-6">
+                            <div class="form-group">
+                                <label class="pull-left">Case Name</label>
+                                <input type="text" class="form-control" ng-model="caseModel.Name" placeholder="Enter Case Name" />
+                            </div>
+                            <div class="form-group">
+                                <label class="pull-left">Case Description</label>
+                                <textarea rows="3" cols="80" class="form-control" ng-model="caseModel.CaseDescription" placeholder="Enter Description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="pull-left">Start Date</label>
+                                <input type="text" class="form-control dp" ng-model="caseModel.StartDate" placeholder="Enter Start Date" />
+                            </div>
+                            <div class="form-group">
+                                <label class="pull-left">Case Type</label>
+                                <input type="text" class="form-control" ng-model="caseModel.CaseType" placeholder="Enter Case Type" />
+                            </div>
+                            <div class="pull-left">
+                                <a class="btn btn-primary" ng-click="UpdateCase($index);">Update</a><button type="button" class="btn btn-primary" ng-click="DeleteCase($index)">Delete</button>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </section>
+                    </div>
+                </div>
+            </section>
+            <!-- Download Section -->
+            <section id="download" class="content-section text-center">
+                <div class="download-section">
+                    <div class="container">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2>About Project</h2>
+                            <p>This project is implemented using the following technologies.</p>
+                            <ul class=" list-inline" style="font-weight: bold;">
+                                <li class="list-item">ASP.NET MVC 4,</li>
+                                <li class="list-item">Web API 2</li>
+                                <li class="list-item">AngularJs</li>
+                                <li class="list-item">Bootstrap 3</li>
+                                <li class="list-item">ADO.NET</li>
+                                <li class="list-item">SQL Server 2008</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section id="contact" class="container content-section text-center">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>Contact {{Author}}</h2>
+                        <p>Feel free to email me to provide some feedback on my project, give me suggestions for new projects, or to just say hello!</p>
+                        <p>
+                            <a href="mailto:umais@heartbeat-biz.com">umais@heartbeat-biz.com</a>
+                        </p>
+                        <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <a href="https://twitter.com/umais20" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/umais" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/+umaissiddiqui" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title text-primary" id="myModalLabel">Add New Case</h4>
+                        </div>
+                        <div class="modal-body">
+                           
+                            <div class="form-group col-md-8">
+                                <label class="pull-left">Case Name</label>
+                                <input type="text" class="form-control" ng-model="BodyParam.Model.Name" placeholder="Enter Case Name"/>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label class="pull-left">Case Description</label>
+                                <textarea rows="3" cols="80" class="form-control" ng-model="BodyParam.Model.CaseDescription" placeholder="Enter Description"></textarea>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label class="pull-left">Start Date</label>
+                                <input  id="datepicker" type="text" class="form-control"  ng-model="BodyParam.Model.StartDate" placeholder="Enter Start Date" />
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label class="pull-left">Case Type</label>
+                                <input type="text" class="form-control" ng-model="BodyParam.Model.CaseType" placeholder="Enter Case Type" />
+                            </div>
+                        
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="col-md-8 pull-left">
+                                <button id="closeModal" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" ng-click="AddNew();">Save changes</button>
+                              
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>

@@ -1,0 +1,16 @@
+C:\Projects\ConsoleTestApplication\bin\Debug\ConsoleTestApplication.exe.config
+C:\Projects\ConsoleTestApplication\bin\Debug\ConsoleTestApplication.exe
+C:\Projects\ConsoleTestApplication\bin\Debug\ConsoleTestApplication.pdb
+C:\Projects\ConsoleTestApplication\bin\Debug\ProjectClassLibrary.dll
+C:\Projects\ConsoleTestApplication\bin\Debug\ProjectClassLibrary.pdb
+C:\Projects\ConsoleTestApplication\obj\Debug\ConsoleTestApplication.csprojResolveAssemblyReference.cache
+C:\Projects\ConsoleTestApplication\obj\Debug\ConsoleTestApplication.exe
+C:\Projects\ConsoleTestApplication\obj\Debug\ConsoleTestApplication.pdb
+C:\Projects\CosmolexProject\ConsoleTestApplication\bin\Debug\ConsoleTestApplication.exe.config
+C:\Projects\CosmolexProject\ConsoleTestApplication\bin\Debug\ConsoleTestApplication.exe
+C:\Projects\CosmolexProject\ConsoleTestApplication\bin\Debug\ConsoleTestApplication.pdb
+C:\Projects\CosmolexProject\ConsoleTestApplication\bin\Debug\ProjectClassLibrary.dll
+C:\Projects\CosmolexProject\ConsoleTestApplication\bin\Debug\ProjectClassLibrary.pdb
+C:\Projects\CosmolexProject\ConsoleTestApplication\obj\Debug\ConsoleTestApplication.csprojResolveAssemblyReference.cache
+C:\Projects\CosmolexProject\ConsoleTestApplication\obj\Debug\ConsoleTestApplication.exe
+C:\Projects\CosmolexProject\ConsoleTestApplication\obj\Debug\ConsoleTestApplication.pdb

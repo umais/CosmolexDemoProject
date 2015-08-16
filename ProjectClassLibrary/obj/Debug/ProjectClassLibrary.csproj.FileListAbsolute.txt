@@ -1,0 +1,10 @@
+C:\Projects\ProjectClassLibrary\bin\Debug\ProjectClassLibrary.dll
+C:\Projects\ProjectClassLibrary\bin\Debug\ProjectClassLibrary.pdb
+C:\Projects\ProjectClassLibrary\obj\Debug\ProjectClassLibrary.csprojResolveAssemblyReference.cache
+C:\Projects\ProjectClassLibrary\obj\Debug\ProjectClassLibrary.dll
+C:\Projects\ProjectClassLibrary\obj\Debug\ProjectClassLibrary.pdb
+C:\Projects\CosmolexProject\ProjectClassLibrary\bin\Debug\ProjectClassLibrary.dll
+C:\Projects\CosmolexProject\ProjectClassLibrary\bin\Debug\ProjectClassLibrary.pdb
+C:\Projects\CosmolexProject\ProjectClassLibrary\obj\Debug\ProjectClassLibrary.csprojResolveAssemblyReference.cache
+C:\Projects\CosmolexProject\ProjectClassLibrary\obj\Debug\ProjectClassLibrary.dll
+C:\Projects\CosmolexProject\ProjectClassLibrary\obj\Debug\ProjectClassLibrary.pdb
