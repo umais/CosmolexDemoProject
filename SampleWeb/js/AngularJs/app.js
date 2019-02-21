@@ -1,4 +1,4 @@
-﻿'use strict';
+
 
 var CosmolexApp = angular.module("CosmolexApp", []).factory("CosmolexService", function() {
 return {
